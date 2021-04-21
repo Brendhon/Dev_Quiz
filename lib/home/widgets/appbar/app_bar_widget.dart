@@ -15,7 +15,7 @@ class AppBarWidget extends PreferredSize {
                     height: 161,
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     width: double.maxFinite,
-                    decoration: BoxDecoration(gradient: AppGradients.linear),
+                    decoration: BoxDecoration(gradient: AppGradients.linear,),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -31,6 +31,7 @@ class AppBarWidget extends PreferredSize {
                           height: 58,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
+                              border: Border.fromBorderSide(BorderSide(color: AppColors.grey)),
                               image: DecorationImage(
                                   image: NetworkImage(
                                       "https://avatars.githubusercontent.com/u/52840078?v=4"))),
