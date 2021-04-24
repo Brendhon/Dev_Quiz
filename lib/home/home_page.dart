@@ -1,3 +1,4 @@
+import 'package:DevQuiz/challenge/challenge_page.dart';
 import 'package:DevQuiz/challenge/widgets/quiz/quiz_widget.dart';
 import 'package:DevQuiz/core/app_colors.dart';
 import 'package:DevQuiz/home/home_controller.dart';
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
     controller.getQuizzes();
 
     controller.stateNotifier.addListener(() {
-      setState((){});
+      setState(() {});
     });
   }
 
@@ -70,6 +71,12 @@ class _HomePageState extends State<HomePage> {
                   crossAxisSpacing: 16,
                   children: controller.quizzes!
                       .map((e) => QuizCardWidget(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ChallengePage(questions: e.questions,)));
+                            },
                             title: e.title,
                             compreted:
                                 "${e.questionsAnswered} de ${e.questions.length}",
@@ -84,9 +91,11 @@ class _HomePageState extends State<HomePage> {
       );
     } else {
       return Scaffold(
-        body: Center(child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(AppColors.darkGreen),
-        ),),
+        body: Center(
+          child: CircularProgressIndicator(
+            valueColor: AlwaysStoppedAnimation<Color>(AppColors.darkGreen),
+          ),
+        ),
       );
     }
   }

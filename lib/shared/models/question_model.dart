@@ -4,7 +4,7 @@ import 'package:DevQuiz/shared/models/awnser_model.dart';
 
 class QuestionModel {
   final String title;
-  final List<AwnserModel> answers;
+  final List<AnswersModel> answers;
 
   QuestionModel({
     required this.title,
@@ -21,7 +21,7 @@ class QuestionModel {
   factory QuestionModel.fromMap(Map<String, dynamic> map) {
     return QuestionModel(
       title: map['title'],
-      answers: List<AwnserModel>.from(map['answers']?.map((x) => AwnserModel.fromMap(x))),
+      answers: List<AnswersModel>.from(map['answers']?.map((x) => AnswersModel.fromMap(x))),
     );
   }
 
