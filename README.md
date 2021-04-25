@@ -30,12 +30,12 @@ As seguintes tecnologias foram utilizadas na construção do projeto::
 <p align="center" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
     <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
     <img alt="Home" style="margin-right: 10px"
-    src="assets\images\page1.png" width="100px">
-    <img alt="Quiz 1" style="margin-right: 10px" src="assets\images\page2.png" width="100px">
+    src="assets\images\page1.png" width="150px">
+    <img alt="Quiz 1" style="margin-right: 10px" src="assets\images\page2.png" width="150px">
     <img alt="Quiz 2" 
     style="margin-right: 10px" 
-    src="assets\images\page3.png" width="100px">
-    <img alt="Resultado" style="margin-right: 10px" src="assets\images\page4.png" width="100px">
+    src="assets\images\page3.png" width="150px">
+    <img alt="Resultado" style="margin-right: 10px" src="assets\images\page4.png" width="150px">
     </p>
 </p>
 
