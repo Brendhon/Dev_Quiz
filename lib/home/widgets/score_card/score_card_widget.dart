@@ -1,8 +1,17 @@
-import 'package:DevQuiz/home/widgets/chart/chart_widget.dart';
-import '../../../core/core.dart';
 import 'package:flutter/material.dart';
 
+import 'package:DevQuiz/home/widgets/chart/chart_widget.dart';
+
+import '../../../core/core.dart';
+
 class ScoreCardWidget extends StatelessWidget {
+  final double percent;
+
+  const ScoreCardWidget({
+    Key? key,
+    required this.percent,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -10,7 +19,7 @@ class ScoreCardWidget extends StatelessWidget {
       child: Container(
         height: 136,
         decoration: BoxDecoration(
-            color: AppColors.white, 
+            color: AppColors.white,
             border: Border.fromBorderSide(BorderSide(color: AppColors.border)),
             borderRadius: BorderRadius.circular(15)),
         child: Padding(
@@ -18,7 +27,7 @@ class ScoreCardWidget extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Expanded(flex: 1, child: ChartWidget()),
+              Expanded(flex: 1, child: ChartWidget(percent: percent,)),
               Expanded(
                 flex: 3,
                 child: Padding(

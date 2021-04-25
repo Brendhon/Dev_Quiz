@@ -9,18 +9,18 @@
         "title": "Está curtindo o Flutter?",
         "answers": [
               {"title": "Estou curtindo", "isRight": true},
-              {"title": "Estou amando"},
-              {"title": "Estou xonado"},
-              {"title": "Estou titi"}
+              {"title": "Amando"},
+              {"title": "Muito top"},
+              {"title": "Show!"}
         ]
       }, 
       {
-        "title": "Está curtindo o Flutter?", 
+        "title": "O que o Flutter faz em sua totalidade?", 
         "answers": [
-              {"title": "Estou curtindo", "isRight": true},
-              {"title": "Estou amando"},
-              {"title": "Estou xonado"},
-              {"title": "Estou titi"}
+              {"title": "Kit de desenvolvimento de interface de usuário"},
+              {"title": "Possibilita a criação de aplicativos compilados nativamente", "isRight": true},
+              {"title": "Acho que é uma marca de café do Himalaia"},
+              {"title": "Possibilita a criação de desktops que são muito incríveis"}
         ]
       }
     ]
